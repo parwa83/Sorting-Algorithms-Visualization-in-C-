@@ -1,0 +1,21 @@
+{
+  "label": "build SFML project",
+  "type": "shell",
+  "command": "g++",
+  "args": [
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-g3",
+    "${workspaceFolder}/main.cpp",
+    "-o",
+    "${workspaceFolder}/output/main",
+    "-lsfml-graphics",
+    "-lsfml-window",
+    "-lsfml-system"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  }
+}
